@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div style="width: 100%;height: 600px; ">
+            <img src="images/WallpaperDog-20380921.jpg" style="width: 100%; height: 600px;">
+            <div id="glass">
+                <h3 id="result" style="margin-left: 106px;">result</h3>
+                <h3 id="turn" style="margin-left: 90px;"></h3>
+
+        <table>
+
+            <tr>
+                <td id="left-top">
+                    <button onclick="show_index(0,0)" id="b1" class="cells" ></button>
+                </td>
+                <td id="center-top">
+                    <button onclick="show_index(0,1)" id="b2" class="cells" ></button>
+                </td>
+                <td id="right-top">
+                    <button onclick="show_index(0,2)" id="b3" class="cells" ></button>
+                </td>
+            </tr>
+            <tr>
+                <td id="left-middle">
+                    <button onclick="show_index(1,0)" id="b4" class="cells" ></button>
+                </td>
+                <td id="center-middle">
+                    <button onclick="show_index(1,1)"  id="b5" class="cells" ></button>
+                </td>
+                <td id="right-middle">
+                    <button onclick="show_index(1,2)" id="b6" class="cells"></button>
+                </td>
+            </tr>
+            <tr>
+                <td id="left-bottom">
+                    <button onclick="show_index(2,0)" id="b7" class="cells" ></button>
+                </td>
+                <td id="center-bottom">
+                    <button onclick="show_index(2,1)"  id="b8" class="cells"></button>
+                </td>
+                <td id="right-bottom">
+                    <button onclick="show_index(2,2)" id="b9" class="cells" ></button>
+                </td>
+            </tr>
+
+        </table>
+
+        <button onclick="restart()" id="btn">new game</button>
+        <input type="radio" id="btn2" onclick="towPlayer()" name="fav_language"><span style="color: azure; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">player1 & player2</span>
+        <input type="radio" id="btn3" onclick="playWithCPU()" name="fav_language"><span style="color: azure; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">human & cpu</span>
+        <div id="score_board">
+            <p style="text-shadow: 3px 3px 3px rgb(110, 172, 18); color: rgba(28, 92, 26, 0.829);"><b>Score Board</b></p>
+        <p style="color: azure;">Score X=<b id="score-x">0</b></p>
+        <p style="color: azure;">Score O=<b id="score-o">0</b></p>
+        <p style="color: azure;">Draw=<b id="draw">0</b></p>
+    </div>
+
+        <script src="script.js"></script>
+    </div>
+</div>
+    </body>
+</html>
